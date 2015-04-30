@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MOML>
+    <UI>
+        <UILAYOUT portrait="640,fixed" landscape="640,fixed">
+            <WINDOW id="ProfilePhoto" layout="0,0,640,450" defaultImg="./sy_bg_main_profile01.png">
+                <LABEL layout="0,0,300,300" text="ddddddd"/>
+            </WINDOW>
+        </UILAYOUT>
+    </UI>
+</MOML>

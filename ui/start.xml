@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MOML>
+    <UI>
+        <UILAYOUT portrait="fixed,fixed" landscape="fixed,fixed">
+            <NAVIGATIONCONTAINER id="navigation" layout="0,0,root.width,root.height" selectItem="MyCar">
+                <VIEWITEM id="MyCar" src="MyCar.xml" transitionInEffect="move:right" transitionOutEffect="move:left"/>
+                <VIEWITEM id="Chart" src="Chart.xml" transitionInEffect="move:right" transitionOutEffect="move:left"/>
+                <VIEWITEM id="Alarm" src="Alarm.xml" transitionInEffect="move:right" transitionOutEffect="move:left"/>
+            </NAVIGATIONCONTAINER>
+            <WINDOW id="FooterMenu" layout="0,root.height-100,root.width,100" defaultImg="#ffffff" shadow="normal" >
+                <BUTTON id="MyCarIcon" layout="0,0,100,100" defaultImg="./sy_icon_footer_menu_mycar_on01.png" onClick="function.MyCar"/>
+                <BUTTON id="ChartIcon" layout="100,0,100,100" defaultImg="./sy_icon_footer_menu_chart01.png" onClick="function.Chart"/>
+                <BUTTON id="AlarmIcon" layout="200,0,100,100" defaultImg="./sy_icon_footer_menu_alarm01.png" onClick="function.Alarm"/>
+                <BUTTON id="MoreIcon" layout="root.width-100,0,100,100" defaultImg="./sy_icon_footer_menu_more01.png"/>
+            </WINDOW>
+        </UILAYOUT>
+    </UI>
+
+    <FUNCTION id="MyCar">
+        <CMD cmd="root.navigation.selectItem='MyCar'" />
+        <CMD cmd="root.FooterMenu.MyCarIcon.defaultImg='sy_icon_footer_menu_mycar_on01.png'" />
+        <CMD cmd="root.FooterMenu.ChartIcon.defaultImg='sy_icon_footer_menu_chart01.png'" />
+        <CMD cmd="root.FooterMenu.AlarmIcon.defaultImg='sy_icon_footer_menu_alarm01.png'" />
+    </FUNCTION>
+    <FUNCTION id="Chart">
+        <CMD cmd="root.navigation.selectItem='Chart'" />
+        <CMD cmd="root.FooterMenu.MyCarIcon.defaultImg='sy_icon_footer_menu_mycar01.png'" />
+        <CMD cmd="root.FooterMenu.ChartIcon.defaultImg='sy_icon_footer_menu_chart_on01.png'" />
+        <CMD cmd="root.FooterMenu.AlarmIcon.defaultImg='sy_icon_footer_menu_alarm01.png'" />
+    </FUNCTION>
+    <FUNCTION id="Alarm">
+        <CMD cmd="root.navigation.selectItem='Alarm'" />
+        <CMD cmd="root.FooterMenu.MyCarIcon.defaultImg='sy_icon_footer_menu_mycar01.png'" />
+        <CMD cmd="root.FooterMenu.ChartIcon.defaultImg='sy_icon_footer_menu_chart01.png'" />
+        <CMD cmd="root.FooterMenu.AlarmIcon.defaultImg='sy_icon_footer_menu_alarm_on01.png'" />
+    </FUNCTION>
+</MOML>
