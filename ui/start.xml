@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MOML>
     <UI>
-        <UILAYOUT portrait="fixed,fixed" landscape="fixed,fixed">
+        <UILAYOUT portrait="800,1280" landscape="800,1280">
             <NAVIGATIONCONTAINER id="navigation" layout="0,0,root.width,root.height" selectItem="MyCar">
                 <VIEWITEM id="MyCar" src="MyCar.xml" transitionInEffect="move:right" transitionOutEffect="move:left"/>
                 <VIEWITEM id="Chart" src="Chart.xml" transitionInEffect="move:right" transitionOutEffect="move:left"/>
@@ -15,7 +15,7 @@
             </WINDOW>
         </UILAYOUT>
     </UI>
-	<CMD condition="device.os.platform=='iOS'" cmd="userVariable.sbHeight=0, navigation.top=userVariable.sbHeight, navigation.width=640, navigation.height=960" elseCmd="userVariable.sbHeight=0"/>
+	<CMD condition="device.os.platform=='iOS' &amp;&amp; math.sub(string.split(device.os.version, '.', 0), 7) &gt;= 0" cmd="userVariable.sbHeight=40, navigation.top=userVariable.sbHeight, navigation.height=1280-userVariable.sbHeight" elseCmd="userVariable.sbHeight=0"/>
 
     <FUNCTION id="MyCar">
         <CMD cmd="root.navigation.selectItem='MyCar'" />
