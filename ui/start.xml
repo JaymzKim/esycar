@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MOML>
-    <UI>
-        <UILAYOUT portrait="720,1280" landscape="720,1280">
-            <NAVIGATIONCONTAINER id="navigation" layout="0,0,root.width,root.height" selectItem="MyCar">
-                <VIEWITEM id="MyCar" src="MyCar.xml" transitionInEffect="move:right" transitionOutEffect="move:left"/>
-                <VIEWITEM id="Chart" src="Chart.xml" transitionInEffect="move:right" transitionOutEffect="move:left"/>
-                <VIEWITEM id="Alarm" src="Alarm.xml" transitionInEffect="move:right" transitionOutEffect="move:left"/>
-            </NAVIGATIONCONTAINER>
-            <WINDOW id="FooterMenu" layout="0,root.height-100,root.width,100" defaultImg="#ffffff" shadow="normal" >
-                <BUTTON id="MyCarIcon" layout="0,0,100sr,100sr" defaultImg="./sy_icon_footer_menu_mycar_on01.png" onClick="function.MyCar"/>
-                <BUTTON id="ChartIcon" layout="100,0,100sr,100sr" defaultImg="./sy_icon_footer_menu_chart01.png" onClick="function.Chart"/>
-                <BUTTON id="AlarmIcon" layout="200,0,100sr,100sr" defaultImg="./sy_icon_footer_menu_alarm01.png" onClick="function.Alarm"/>
-                <BUTTON id="MoreIcon" layout="root.width-100,0,100sr,100sr" defaultImg="./sy_icon_footer_menu_more01.png"/>
-            </WINDOW>
-        </UILAYOUT>
-    </UI>
+<MOML version="1.1.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.applusform.com/xsd/moml_ui_1.1.5.xsd">
+    
+	<UILAYOUT portrait="720,1280" landscape="720,1280">
+		<NAVIGATIONCONTAINER id="navigation" layout="0,0,root.width,root.height" selectItem="MyCar">
+			<VIEWITEM id="MyCar" src="MyCar.xml" transitionInEffect="move:right" transitionOutEffect="move:left"/>
+			<VIEWITEM id="Chart" src="Chart.xml" transitionInEffect="move:right" transitionOutEffect="move:left"/>
+			<VIEWITEM id="Alarm" src="Alarm.xml" transitionInEffect="move:right" transitionOutEffect="move:left"/>
+		</NAVIGATIONCONTAINER>
+		<WINDOW id="FooterMenu" layout="0,root.height-100,root.width,100" defaultImg="#ffffff" shadow="normal" >
+			<BUTTON id="MyCarIcon" layout="0,0,100sr,100sr" defaultImg="./sy_icon_footer_menu_mycar_on01.png" onClick="function.MyCar"/>
+			<BUTTON id="ChartIcon" layout="100,0,100sr,100sr" defaultImg="./sy_icon_footer_menu_chart01.png" onClick="function.Chart"/>
+			<BUTTON id="AlarmIcon" layout="200,0,100sr,100sr" defaultImg="./sy_icon_footer_menu_alarm01.png" onClick="function.Alarm"/>
+			<BUTTON id="MoreIcon" layout="root.width-100,0,100sr,100sr" defaultImg="./sy_icon_footer_menu_more01.png"/>
+		</WINDOW>
+	</UILAYOUT>
+    
 	<CMD condition="device.os.platform=='iOS' &amp;&amp; math.sub(string.split(device.os.version, '.', 0), 7) &gt;= 0" cmd="userVariable.sbHeight=40, navigation.top=userVariable.sbHeight, navigation.height=1280-userVariable.sbHeight" elseCmd="userVariable.sbHeight=0"/>
 
     <FUNCTION id="MyCar">
