@@ -5,7 +5,7 @@
     <APPLICATIONINFO>
 
         <START url="ui/start.xml" />
-		<AUTOFIT toleranceRatio="0" />
+		<AUTOFIT toleranceRatio="10" />
 		<ORIENTATION type="defaultPortrait" />
 
     </APPLICATIONINFO>
