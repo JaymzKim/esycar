@@ -7,11 +7,11 @@
 			<VIEWITEM id="Chart" src="Chart.xml" transitionInEffect="move:right" transitionOutEffect="move:left"/>
 			<VIEWITEM id="Alarm" src="Alarm.xml" transitionInEffect="move:right" transitionOutEffect="move:left"/>
 		</NAVIGATIONCONTAINER>
-		<WINDOW id="FooterMenu" layout="0,root.height-100sr,root.width,100sr" defaultImg="#ffffff" shadow="normal" >
-			<BUTTON id="MyCarIcon" layout="0,0,100sr,100sr" defaultImg="./sy_icon_footer_menu_mycar_on01.png" onClick="function.MyCar"/>
-			<BUTTON id="ChartIcon" layout="100,0,100sr,100sr" defaultImg="./sy_icon_footer_menu_chart01.png" onClick="function.Chart"/>
-			<BUTTON id="AlarmIcon" layout="200,0,100sr,100sr" defaultImg="./sy_icon_footer_menu_alarm01.png" onClick="function.Alarm"/>
-			<BUTTON id="MoreIcon" layout="root.width-100,0,100sr,100sr" defaultImg="./sy_icon_footer_menu_more01.png"/>
+		<WINDOW id="FooterMenu" layout="0,root.height-100pt,root.width,100pt" defaultImg="#ffffff" shadow="normal" >
+			<BUTTON id="MyCarIcon" layout="0,0,100pt,100pt" defaultImg="./sy_icon_footer_menu_mycar_on01.png" onClick="function.MyCar"/>
+			<BUTTON id="ChartIcon" layout="100,0,100pt,100pt" defaultImg="./sy_icon_footer_menu_chart01.png" onClick="function.Chart"/>
+			<BUTTON id="AlarmIcon" layout="200,0,100pt,100pt" defaultImg="./sy_icon_footer_menu_alarm01.png" onClick="function.Alarm"/>
+			<BUTTON id="MoreIcon" layout="root.width-100,0,100pt,100pt" defaultImg="./sy_icon_footer_menu_more01.png"/>
 		</WINDOW>
 	</UILAYOUT>
     
