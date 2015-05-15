@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MOML>
     <UI>
-        <UILAYOUT portrait="fixed,fixed" landscape="fixed,fixed">
+        <UILAYOUT portrait="720,1280" landscape="720,1280">
             <WINDOW id="ProfilePhoto" layout="0,0,root.width,root.height*0.45" defaultImg="./sy_bg_main_profile01.png">
                 <BUTTON layout="root.width-80,20,60,60" defaultImg="./sy_btn_plus01.png"/>
 				<LABEL text="{root.width}"/>
