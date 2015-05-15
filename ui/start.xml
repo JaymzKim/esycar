@@ -15,8 +15,6 @@
 		</WINDOW>
 	</UILAYOUT>
     
-	<CMD condition="device.os.platform=='iOS' &amp;&amp; math.sub(string.split(device.os.version, '.', 0), 7) &gt;= 0" cmd="userVariable.sbHeight=40, navigation.top=userVariable.sbHeight, navigation.height=1280-userVariable.sbHeight" elseCmd="userVariable.sbHeight=0"/>
-
     <FUNCTION id="MyCar">
         <CMD cmd="root.navigation.selectItem='MyCar'" />
         <CMD cmd="root.FooterMenu.MyCarIcon.defaultImg='sy_icon_footer_menu_mycar_on01.png'" />
