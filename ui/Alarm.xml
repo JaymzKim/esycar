@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MOML>
     <UI>
-        <UILAYOUT portrait="720,1280" landscape="720,1280">
-            <WINDOW id="ProfilePhoto" layout="0,0,640,450" defaultImg="./sy_bg_main_profile01.png">
+        <UILAYOUT portrait="640,980">
+            <WINDOW id="ProfilePhoto" layout="0,0,root.width,root.height*0.45" defaultImg="./sy_bg_main_profile01.png">
                 <LABEL layout="0,0,300,300" text="ddddddd"/>
             </WINDOW>
         </UILAYOUT>
