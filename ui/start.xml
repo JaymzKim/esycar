@@ -9,8 +9,8 @@
 		</NAVIGATIONCONTAINER>
 		<WINDOW id="FooterMenu" layout="0,root.height-7mm,root.width,7mm" defaultImg="#ffffff" shadow="normal" align="linear:justify">
 			<BUTTON id="MyCarIcon" layout="7mm,7mm" defaultImg="./sy_icon_footer_menu_mycar_on01.png" onClick="function.MyCar"/>
-			<BUTTON id="ChartIcon" layout="7mm,7mm" margin="7mm 0 0 0" defaultImg="./sy_icon_footer_menu_chart01.png" onClick="function.Chart"/>
-			<BUTTON id="AlarmIcon" layout="7mm,7mm" margin="14mm 0 0 0" defaultImg="./sy_icon_footer_menu_alarm01.png" onClick="function.Alarm"/>
+			<BUTTON id="ChartIcon" layout="7mm,7mm" margin="70 0 0 0" defaultImg="./sy_icon_footer_menu_chart01.png" onClick="function.Chart"/>
+			<BUTTON id="AlarmIcon" layout="7mm,7mm" margin="140 0 0 0" defaultImg="./sy_icon_footer_menu_alarm01.png" onClick="function.Alarm"/>
 			<BUTTON id="MoreIcon" layout="7mm,7mm" defaultImg="./sy_icon_footer_menu_more01.png"/>
 		</WINDOW>
 	</UILAYOUT>
