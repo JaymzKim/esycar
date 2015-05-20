@@ -2,15 +2,15 @@
 <MOML version="1.1.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.applusform.com/xsd/moml_ui_1.1.5.xsd">
     
 	<UILAYOUT portrait="720,1280">
-		<NAVIGATIONCONTAINER id="navigation" layout="0,0,root.width,root.height" align="linear:vertical|bottom" selectItem="MyCar">
+		<NAVIGATIONCONTAINER id="navigation" layout="0,0,root.width,root.height" selectItem="MyCar">
 			<VIEWITEM id="MyCar" src="MyCar.xml" transitionInEffect="move:right" transitionOutEffect="move:left"/>
 			<VIEWITEM id="Chart" src="Chart.xml" transitionInEffect="move:right" transitionOutEffect="move:left"/>
 			<VIEWITEM id="Alarm" src="Alarm.xml" transitionInEffect="move:right" transitionOutEffect="move:left"/>
 		</NAVIGATIONCONTAINER>
 		<WINDOW id="FooterMenu" layout="0,root.height-7mm,root.width,7mm" defaultImg="#ffffff" shadow="normal" align="linear:justify">
 			<BUTTON id="MyCarIcon" layout="0,0,7mm,7mm" defaultImg="./sy_icon_footer_menu_mycar_on01.png" onClick="function.MyCar"/>
-			<BUTTON id="ChartIcon" layout="100,0,7mm,7mm" defaultImg="./sy_icon_footer_menu_chart01.png" onClick="function.Chart"/>
-			<BUTTON id="AlarmIcon" layout="200,0,7mm,7mm" defaultImg="./sy_icon_footer_menu_alarm01.png" onClick="function.Alarm"/>
+			<BUTTON id="ChartIcon" layout="7mm,0,7mm,7mm" defaultImg="./sy_icon_footer_menu_chart01.png" onClick="function.Chart"/>
+			<BUTTON id="AlarmIcon" layout="14mm,0,7mm,7mm" defaultImg="./sy_icon_footer_menu_alarm01.png" onClick="function.Alarm"/>
 			<BUTTON id="MoreIcon" layout="root.width-7mm,0,7mm,7mm" defaultImg="./sy_icon_footer_menu_more01.png"/>
 		</WINDOW>
 	</UILAYOUT>
