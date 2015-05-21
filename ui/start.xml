@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MOML version="1.1.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.applusform.com/xsd/moml_ui_1.1.5.xsd">
     
-	<UILAYOUT portrait="720,1280" align="linear:vertical|bottom">
+	<UILAYOUT portrait="720,1280">
 		<NAVIGATIONCONTAINER id="navigation" layout="0,0,root.width,root.height" selectItem="MyCar">
 			<VIEWITEM id="MyCar" src="MyCar.xml" transitionInEffect="move:right" transitionOutEffect="move:left"/>
 			<VIEWITEM id="Chart" src="Chart.xml" transitionInEffect="move:right" transitionOutEffect="move:left"/>
