@@ -3,7 +3,7 @@
 <MOML>
     <APPLICATIONINFO>
         <UPDATEINFO realTimeType="qMark" />
-        <START url="http://www.esycar.co.kr/App/SYHome.xml" />
+        <START url="http://www.esycar.co.kr/esycar/App/SYHome.xml" />
         <ORIENTATION type="portrait" effect="none" />
         <DEBUG suppressError="all"/>
     </APPLICATIONINFO>
