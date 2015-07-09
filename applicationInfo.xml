@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <MOML>
-
     <APPLICATIONINFO>
-
-        <START url="ui/start.xml" />
-		<ORIENTATION type="defaultPortrait" />
-
+        <UPDATEINFO realTimeType="qMark" />
+        <START url="http://www.esycar.co.kr/App/SYHome.xml" />
+        <ORIENTATION type="portrait" effect="none" />
+        <DEBUG suppressError="all"/>
     </APPLICATIONINFO>
-
 </MOML>
